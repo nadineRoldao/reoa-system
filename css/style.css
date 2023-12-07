@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css?family=Arimo');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css');
+
+body {
+  margin: 0;
+  font-family: 'Arimo';
+  overflow: hidden;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(1, 20, 41, 0.853);
+}
+
+.central-content {
+  width: 800px;
+  height: auto;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.title {
+  font-size: 27px;
+  font-weight: 100;
+  color: rgb(255, 255, 255, 0.75);
+}
+
+form {
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.form-content {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.inputs {
+  width: 50%;
+  height: auto;
+  display: flex;
+  padding: 10px 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-content {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.select-content {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-content label {
+  color: #fff;
+  font-size: 14px;
+  letter-spacing: 2px;
+  padding: 10px 0;
+}
+
+.input-content input {
+  border: 0;
+  border-radius: 3px;
+  width: 70%;
+  height: 22px;
+  padding: 10px 10px;
+  outline: none;
+  font-size: 14px;
+  text-align: center;
+  background-color: rgb(255, 255, 255, 0.75);
+  transition: background-color 0.3s;
+}
+
+.input-content input:focus {
+  background-color: rgb(255, 255, 255);
+}
+
+.bottom-form-content {
+  width: 100%;
+  height: auto;
+  display: flex;
+  padding: 5px 0;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.type-select-content {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.type-select-content label {
+  color: #fff;
+  font-size: 14px;
+  letter-spacing: 2px;
+  padding: 10px 0;
+
+}
+
+.type-select-content input {
+  background-color: rgb(255, 255, 255, 0.75);
+  border: 0;
+  border-radius: 3px;
+  width: 20%;
+  height: 22px;
+  padding: 10px 5px;
+  outline: none;
+  transition: background-color 0.3s;
+}
+
+.type-select-content input:focus {
+  background-color: rgb(255, 255, 255);
+}
+
+button {
+  margin-top: 15px;
+}
+
+.custom-btn {
+  width: 45%;
+  height: 40px;
+  color: #fff;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+    7px 7px 20px 0px rgba(36, 36, 36, 0.1),
+    4px 4px 5px 0px rgba(19, 18, 18, 0.1);
+  outline: none;
+  z-index: 0;
+}
+
+.btn-8 {
+  background-color: rgb(244, 145, 253);
+  background-image: linear-gradient(315deg, #3E0A80 0%, #552566 74%);
+  line-height: 42px;
+  padding: 0;
+  border: none;
+}
+
+.btn-8 span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.btn-8:before,
+.btn-8:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  bottom: 0;
+  background: #2c213e;
+  transition: all 0.3s ease;
+}
+
+.btn-8:before {
+  height: 0%;
+  width: 2px;
+}
+
+.btn-8:after {
+  width: 0%;
+  height: 2px;
+}
+
+.btn-8:hover:before {
+  height: 100%;
+}
+
+.btn-8:hover:after {
+  width: 100%;
+}
+
+.btn-8:hover {
+  background: transparent;
+}
+
+.btn-8 span:hover {
+  color: #f99df9;
+}
+
+.btn-8 span:before,
+.btn-8 span:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  background: #fdfcfa;
+  transition: all 0.3s ease;
+}
+
+.btn-8 span:before {
+  width: 2px;
+  height: 0%;
+}
+
+.btn-8 span:after {
+  height: 2px;
+  width: 0%;
+}
+
+.btn-8 span:hover:before {
+  height: 100%;
+}
+
+.btn-8 span:hover:after {
+  width: 100%;
+}
+
+/* UF SELECT */
+
+.select-menu {
+  width: 80.25%;
+  cursor: pointer;
+  position: relative;
+  border-radius: 3px;
+}
+
+.select {
+  background-color: #fff;
+  padding: 11px 15px;
+  color: #000;
+  font-weight: 500;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  font-size: 14px;
+  padding-left: 20%;
+}
+
+.options-list {
+  position: absolute;
+  width: 100%;
+  background-color: #f9f9f9;
+  border-radius: 3px;
+  margin-top: 5px;
+  max-height: 63px;
+  overflow: hidden;
+  transition: .4s linear .2s;
+  height: 0;
+}
+
+.option {
+  padding: 8px;
+  font-weight: 500;
+  font-size: 14px;
+  transition: .3s ease-in-out;
+}
+
+.option:hover,
+.option.selected {
+  color: #fff;
+  background-color: #552566;
+  border-radius: 3px;
+}
+
+.options-list.active {
+  height: 63px;
+}
+
+.icon-span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  font-size: 14px;
+  border-radius: 50px;
+}
+
+.arrow {
+  color: #733b87;
+  transition: transform 0.4s;
+}
+
+.arrow.active {
+  transform: rotate(180deg);
+}
+
+/* TYPE SELECT */
+
+.select-menu2 {
+  padding: 10px;
+  width: 45%;
+  cursor: pointer;
+  position: relative;
+}
+
+.select2 {
+  background-color: #fff;
+  padding: 11px 15px;
+  color: #000;
+  font-weight: 500;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  font-size: 14px;
+}
+
+.select2 span {
+  width: 100%;
+  max-width: fit-content;
+}
+
+.options-list2 {
+  position: absolute;
+  width: 95%;
+  background-color: #f9f9f9;
+  border-radius: 3px;
+  margin-top: 5px;
+  max-height: 63px;
+  overflow: hidden;
+  transition: .4s linear .2s;
+  height: 0;
+  z-index: 10;
+}
+
+.option2 {
+  padding: 8px;
+  font-weight: 500;
+  font-size: 14px;
+  transition: .3s ease-in-out;
+}
+
+.option2:hover,
+.option2.selected2 {
+  color: #fff;
+  background-color: #552566;
+}
+
+.options-list2.active2 {
+  height: 63px;
+}
+
+.icon-span2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  font-size: 14px;
+  border-radius: 50px;
+}
+
+.arrow2 {
+  color: #733b87;
+  transition: transform 0.4s;
+}
+
+.arrow2.active2 {
+  transform: rotate(180deg);
+}

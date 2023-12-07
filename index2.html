@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style2.css">
+    <title>Real Estate Owner Automation</title>
+    <script src="js/script2.js" defer></script>
+</head>
+<body>
+    <div class="main-container">
+        <header>
+            <div class="logo-content">
+                <img src="img/logo.png" alt="logo">
+            </div>
+        </header>
+        <div class="container">
+            <div class="title-div">
+                <span class="title">PESQUISA DE <strong>IMÓVEL</strong></span>
+            </div>
+            <div class="form-div">
+                <form action="">
+                    <div class="input-line">
+                        <div class="input-content">
+                            <label class="input-title">CÓDIGO DA PESQUISA</label>
+                            <input class="inputs" type="text" name="code">
+                        </div>
+    
+                        <div class="input-content">
+                            <label class="input-title">BAIRRO</label>
+                            <input class="inputs" type="text" name="neighborhood">
+                        </div>
+                        
+                        <div class="input-content">
+                            <label class="input-title">RUA</label>
+                            <input class="inputs" type="text" name="street">
+                        </div>
+    
+                        <div class="btn">
+                            <button class="custom-btn btn-8"><span>FILTRAR</span></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="table-el">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th class="no-top no-left">NOME</th>
+                            <th class="no-top">CPF</th>
+                            <th class="no-top">CAMPO</th>
+                            <th class="no-top">CAMPO</th>
+                            <th class="no-top">CAMPO</th>
+                            <th class="no-top no-right">AÇÕES</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="no-left no-bottom"></td>
+                            <td class="no-bottom"></td>
+                            <td class="no-bottom"></td>
+                            <td class="no-bottom"></td>
+                            <td class="no-bottom"></td>
+                            <td class="no-right btn-field no-bottom">
+                                <button class="reprocess" onclick="reprocessAnimation()">
+                                    <i class="fa-solid fa-arrows-rotate icon"></i>
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

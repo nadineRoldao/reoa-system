@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css?family=Arimo');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css');
+
+html {
+    font-family: 'Arimo';
+    width: 100vw;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background: linear-gradient(to right, #111111, #250125, #110011, #250125, #111111);
+    /* Adicionei mais uma cor intermediária para suavizar a transição para o roxo no centro */
+}
+
+.main-container {
+    width: 100%;
+    height: auto;
+}
+
+header {
+    display: flex;
+    padding: 10px;
+    background-color: #000;
+    height: 60px;
+    align-items: center;
+}
+
+.logo-content {
+    width: 200px;
+    height: 60px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.title-div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.title {
+    width: 100%;
+    text-align: center;
+    font-size: 27px;
+    font-weight: 100;
+    color: rgb(255, 255, 255, 0.75);
+    margin-top: 2%;
+  }
+
+.container {
+    width: 97%;
+    height: auto;
+    padding: 20px;
+}
+
+.form-div {
+    width: 100%;
+    height: auto;
+    margin-top: 3%;
+}
+
+.input-line {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.input-content {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-content label {
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 2px;
+    padding: 10px 0;
+}
+
+.input-content input {
+    border: 0;
+    border-radius: 3px;
+    width: 70%;
+    height: 22px;
+    padding: 10px 10px;
+    outline: none;
+    font-size: 16px;
+    text-align: center;
+    background-color: rgb(255, 255, 255, 0.75);
+    transition: background-color 0.3s;
+}
+
+.input-content input:focus {
+    background-color: rgb(255, 255, 255);
+}
+
+.btn {
+    margin-top: 2.5%;
+    width: 100%;
+    height: auto;
+    margin-left: 2.5%;
+}
+
+.custom-btn {
+    width: 60%;
+    height: 42px;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+        7px 7px 20px 0px rgba(36, 36, 36, 0.1),
+        4px 4px 5px 0px rgba(19, 18, 18, 0.1);
+    outline: none;
+    z-index: 0;
+    background-color: rgb(244, 145, 253);
+    background-image: linear-gradient(315deg, #3E0A80 0%, #552566 74%);
+    line-height: 42px;
+    padding: 0;
+    border: none;
+    border-radius: 3px;
+}
+
+.btn-8 span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.btn-8:before,
+.btn-8:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    bottom: 0;
+    background: #2c213e;
+    transition: all 0.3s ease;
+    border-radius: 3px;
+}
+
+.btn-8:before {
+    height: 0%;
+    width: 2px;
+}
+
+.btn-8:after {
+    width: 0%;
+    height: 2px;
+}
+
+.btn-8:hover:before {
+    height: 100%;
+}
+
+.btn-8:hover:after {
+    width: 100%;
+}
+
+.btn-8:hover {
+    background: transparent;
+}
+
+.btn-8 span:hover {
+    color: #f99df9;
+}
+
+.btn-8 span:before,
+.btn-8 span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    background: #fdfcfa;
+    transition: all 0.3s ease;
+}
+
+.btn-8 span:before {
+    width: 2px;
+    height: 0%;
+}
+
+.btn-8 span:after {
+    height: 2px;
+    width: 0%;
+}
+
+.btn-8 span:hover:before {
+    height: 100%;
+}
+
+.btn-8 span:hover:after {
+    width: 100%;
+}
+
+
+.table-el {
+    padding: 10px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+
+
+
+table { 
+    border-collapse: collapse;
+}
+
+th {
+    color: rgb(255, 255, 255, 0.75);
+    font-size: 15px;
+}
+
+th, td {
+    border: 1px solid rgb(255, 255, 255, 0.35);
+    padding: 8px;
+    text-align: center;
+    width: 190px;
+    height: 75px;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+
+.no-top { 
+    border-top: 0;
+}
+.no-bottom { 
+    border-bottom: 0;
+}
+.no-left {
+    border-left: 0;
+}
+.no-right {
+    border-right: 0;
+}
+
+.reprocess {
+    width: 100%;
+    height: 100%;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    background-color: #290538;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.reprocess:hover {
+    color: #290538;
+    background-color: #fff;
+}
+
+.icon {
+    transition: transform 0.4s;
+}
+
+.icon.turn {
+    transform: rotate(180deg);
+}
+
+.btn-field {
+    padding: 0;
+}
