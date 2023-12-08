@@ -267,21 +267,19 @@ button {
 }
 
 .select {
+  width: 100%;
+
+}
+
+.select input {
   background-color: #fff;
   padding: 11px 15px;
   color: #000;
   font-weight: 500;
   border-radius: 3px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  text-align: center;
   font-size: 14px;
-}
-
-.select span {
-  width: 100%;
-  max-width: fit-content;
+  width: 91%;
+  border: 0;
 }
 
 .options-list {
@@ -325,21 +323,19 @@ button {
 }
 
 .select2 {
+  width: 100%;
+
+}
+
+.select2 input {
   background-color: #fff;
   padding: 11px 15px;
   color: #000;
   font-weight: 500;
   border-radius: 3px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  text-align: center;
   font-size: 14px;
-}
-
-.select2 span {
-  width: 100%;
-  max-width: fit-content;
+  width: 91%;
+  border: 0;
 }
 
 .options-list2 {
