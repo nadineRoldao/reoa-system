@@ -1,12 +1,10 @@
 const select = document.querySelector(".select");
 const options_list = document.querySelector(".options-list");
 const options = document.querySelectorAll(".option");
-const faIcon = document.querySelector('.arrow')
 
 //show & hide options list
 select.addEventListener("click", () => {
   options_list.classList.toggle("active");
-  faIcon.classList.toggle('active')
 
 });
 
@@ -17,7 +15,6 @@ options.forEach((option) => {
     select.querySelector("span").innerHTML = option.innerHTML
     option.classList.add("selected")
     options_list.classList.toggle("active")
-    faIcon.classList.toggle('active')
 
   })
 })
@@ -25,12 +22,10 @@ options.forEach((option) => {
 const select2 = document.querySelector(".select2");
 const options_list2 = document.querySelector(".options-list2");
 const options2 = document.querySelectorAll(".option2");
-const faIcon2 = document.querySelector('.arrow2')
 
 //show & hide options list
 select2.addEventListener("click", () => {
   options_list2.classList.toggle("active2");
-  faIcon2.classList.toggle('active2')
 
 });
 
@@ -41,7 +36,6 @@ options2.forEach((option) => {
     select2.querySelector("span").innerHTML = option.innerHTML
     option.classList.add("selected2")
     options_list2.classList.toggle("active2")
-    faIcon2.classList.toggle('active2')
 
   })
 })

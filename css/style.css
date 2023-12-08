@@ -32,7 +32,7 @@ img {
   width: 800px;
   height: auto;
   position: absolute;
-  top: 40%;
+  top: 35%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -104,6 +104,11 @@ form {
   transition: background-color 0.3s;
 }
 
+.input-content input:disabled {
+  background-color: #A09BA4;
+  cursor: not-allowed;
+}
+
 .input-content input:focus {
   background-color: rgb(255, 255, 255);
 }
@@ -170,6 +175,7 @@ button {
     4px 4px 5px 0px rgba(19, 18, 18, 0.1);
   outline: none;
   z-index: 0;
+  border-radius: 3px;
 }
 
 .btn-8 {
@@ -251,13 +257,13 @@ button {
   width: 100%;
 }
 
-/* UF SELECT */
+/* BAIRRO AUTOCOMPLETE */
 
 .select-menu {
-  width: 80.25%;
+  padding: 10px;
+  width: 45%;
   cursor: pointer;
   position: relative;
-  border-radius: 3px;
 }
 
 .select {
@@ -271,12 +277,16 @@ button {
   justify-content: space-between;
   text-align: center;
   font-size: 14px;
-  padding-left: 20%;
+}
+
+.select span {
+  width: 100%;
+  max-width: fit-content;
 }
 
 .options-list {
   position: absolute;
-  width: 100%;
+  width: 95%;
   background-color: #f9f9f9;
   border-radius: 3px;
   margin-top: 5px;
@@ -284,6 +294,7 @@ button {
   overflow: hidden;
   transition: .4s linear .2s;
   height: 0;
+  z-index: 10;
 }
 
 .option {
@@ -297,31 +308,12 @@ button {
 .option.selected {
   color: #fff;
   background-color: #552566;
-  border-radius: 3px;
 }
 
 .options-list.active {
   height: 63px;
 }
 
-.icon-span {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 20px;
-  height: 20px;
-  font-size: 14px;
-  border-radius: 50px;
-}
-
-.arrow {
-  color: #733b87;
-  transition: transform 0.4s;
-}
-
-.arrow.active {
-  transform: rotate(180deg);
-}
 
 /* TYPE SELECT */
 
@@ -378,23 +370,4 @@ button {
 
 .options-list2.active2 {
   height: 63px;
-}
-
-.icon-span2 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 20px;
-  height: 20px;
-  font-size: 14px;
-  border-radius: 50px;
-}
-
-.arrow2 {
-  color: #733b87;
-  transition: transform 0.4s;
-}
-
-.arrow2.active2 {
-  transform: rotate(180deg);
 }
